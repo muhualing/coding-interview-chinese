@@ -155,7 +155,11 @@ description: 微软苏州面试题
     * ![](https://lbgzmhl.gitbooks.io/microsoft-suzhou-interview/content/assets/import.png)
     * 结果为正时则\($$x_3, y_3$$\)在直线左侧，为负在右侧
   * 分治法O\(nlogn\)
-    * 思路：找到凸包点，分割点集，在子点集上继续找凸包点 ![](.gitbook/assets/image%20%283%29.png)
+    * 思路：找到凸包点，分割点集，在子点集上继续找凸包点  
+
+
+      ![](.gitbook/assets/image%20%283%29.png)
+
     * 步骤：
       * 找到横坐标最大的P1和P2肯定是凸包点，分割为上下包
       * 对上包，求**距离直线最远的点（公式如上）**，即图中Pmax
@@ -164,13 +168,16 @@ description: 微软苏州面试题
   * 步进法O\(nH\)
     * H是闭包点的个数。
     * 思路：
-      * ![](https://lbgzmhl.gitbooks.io/microsoft-suzhou-interview/content/assets/%E6%AD%A5%E8%BF%9B%E6%B3%95.png)
+
+      ![](https://lbgzmhl.gitbooks.io/microsoft-suzhou-interview/content/assets/%E6%AD%A5%E8%BF%9B%E6%B3%95.png)
+
       * 先找纵坐标最小的点加入闭包
       * 从P0开始，逆时针找点集上使alpha角\(和x轴夹角\)最小的点，即P1
       * 从P1出发，逆时针找点集上使alpha角\(P0P1和P1P?夹角\)最小的点，即P2
       * 重复，直到回到P0。注意共线时点都加入闭包，但选最远点为下一次的出发点。
   * Graham扫描法O\(nlogn\)
-    * ![](https://lbgzmhl.gitbooks.io/microsoft-suzhou-interview/content/assets/20150530145453912.gif)
+
+    ![](https://lbgzmhl.gitbooks.io/microsoft-suzhou-interview/content/assets/20150530145453912.gif)
 
 
 
