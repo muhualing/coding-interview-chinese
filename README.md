@@ -17,11 +17,16 @@ description: 微软苏州面试题
 ### 数学
 
 * **高频题**
-  * [旋转图像](https://leetcode.com/problems/rotate-image)++++
+  * ✔️[旋转图像](https://leetcode.com/problems/rotate-image)++++
     * inplace?方阵？
-  * [涂色问题](https://blog.csdn.net/BBHHTT/article/details/79759509)+++
+    * 思路：上下反转再做对角线反转。
+  * ✔️[涂色问题](https://blog.csdn.net/BBHHTT/article/details/79759509)+++
     * 给定一个邻接矩阵，0代表不相邻，1代表相邻，给定k个颜色，求出每个item应该怎么涂色。
-  * 找数组中和为target+++
+    * 思路：
+      * 复杂度o\(n^3\)
+      * 写一个函数判断某个点和连接的点是否颜色相同，即判断matrix\[x\]\[y\] == 1 and color\[x\] == color\[y\]，遍历y，找到不同的就可以返回1.
+      * 再写个主函数遍历每次给一个点赋颜色，如果不同就一直换。
+  * ✔️找数组中和为target+++
     * [找出一个数组中和为target两个数的索引](https://leetcode.com/problems/two-sum/)++
       * 把target-当前数的值存进字典，value是当前的索引。
       * 当后面的数值在字典中，说明这个数和之前某个数之和为target，取出之前的索引
@@ -30,7 +35,7 @@ description: 微软苏州面试题
   * 在一个数组里找任意两个数之和的绝对值最小值
     * 可以排序？可以
     * 用指针，注意指针移动条件
-* **最长连续子序列**
+* **✔️最长连续子序列**
   * 给一个只包含0和1的序列，找出保证0和1的数目相同的最长连续子列。[http://www.voidcn.com/article/p-pshuooqw-mn.html](http://www.voidcn.com/article/p-pshuooqw-mn.html)
   * 把0变成-1，题目等同于求和为0的最长连续子序列，动态规划，注意要找最后一个**偶数位**的0
   * 如果子串不是从头开始怎么办？比如1101100，此时动态规划方法要调整。
@@ -43,8 +48,8 @@ description: 微软苏州面试题
     * 220的所有因子\(除了自己以外的因子\)：1+2+4+5+10+11+20+22+44+55+110 = 284
     * 284的所有因子：1+2+4+71+142 = 220
 * **全排列**
-  * 找到这个permutation在全排列中的index。
-  * [https://leetcode.com/problems/permutations/discuss/18296/Simple-Python-solution-\(DFS\).](https://leetcode.com/problems/permutations/discuss/18296/Simple-Python-solution-%28DFS%29.)
+  * 找到这个permutation在全排列中的index。[https://leetcode.com/problems/permutations/discuss/18296/Simple-Python-solution-\(DFS\).](https://leetcode.com/problems/permutations/discuss/18296/Simple-Python-solution-%28DFS%29.)
+  * 
 * 一道是长度为N的数组，每个元素为0或1或2，找到满足a\[i\]&lt;a\[j\]&lt;a\[k\]的\(i, j, k\)的数量
 * **简单题：**
   * 求1到1000000的质数
