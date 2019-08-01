@@ -1,5 +1,5 @@
 ---
-description: 微软苏州面试题
+description: 微软面试题
 ---
 
 # 面试题
