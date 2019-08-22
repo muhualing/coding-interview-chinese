@@ -10,4 +10,4 @@
 ## 面经流程及高频真题
 * [微软面试](./microsoft/readme.md)
 
-## [简历](./resume/readme.md)
+## [程序员简历模板Latex中文](https://github.com/muhualing/coding-interview-chinese/tree/master/resume#%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8Alatex%E6%A8%A1%E6%9D%BF)
