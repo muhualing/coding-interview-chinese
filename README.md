@@ -8,6 +8,6 @@
 我不是招聘人员，我的建议都是个人经验的总结和反思。只希望为大家提供一点微小的帮助，也请大家用批判的眼光来看这个笔记。
 
 ## 面经流程及高频真题
-* [微软面试](./microsoft/readme.md)
+* [微软面试](microsoft/)
 
-## [程序员简历模板Latex中文](https://github.com/muhualing/coding-interview-chinese/tree/master/resume#%E7%AE%80%E5%8E%86%E4%BB%A5%E5%8F%8Alatex%E6%A8%A1%E6%9D%BF)
+## [程序员简历模板Latex中文](resume/)
