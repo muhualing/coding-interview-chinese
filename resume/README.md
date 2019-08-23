@@ -6,3 +6,8 @@
      This browser does not support PDFs. Please download the PDF to view it: <a href="./resume-chinese.pdf">Download PDF</a>.</p> 
     </embed> 
 </object> 
+
+
+# [英文Latex模板](https://github.com/sb2nov/resume)
+### Preview
+![Resume Screenshot](https://raw.githubusercontent.com/sb2nov/resume/master/resume_preview.png)
