@@ -1,11 +1,5 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% License : MIT
-%------------------------
 
 \documentclass[letterpaper,11pt]{resume-chinese}
-
 \usepackage[UTF8]{ctex}
 
 \usepackage{latexsym}
@@ -40,26 +34,36 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{5pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
 
-%-------------------------
+
+	%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
+  \vspace{+2pt}
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+	\newcommand{\resumeSubheading}[4]{
+  \vspace{+5pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+	\newcommand{\resumeSubItemTime}[2]{
+  \vspace{5 pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-18pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\vspace{+4pt}\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -76,8 +80,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Mu Hualing}} & Email : \href{mailto:hualing.mu@outlook.com}{hualing.mu@outlook.com}\\
-  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+  \textbf{\href{http://muhualing.github.io/}{\Huge Mu Hualing}} & Email :
+  \href{mailto:hualing.mu@outlook.com}{hualing.mu@outlook.com}\\
+  \href{http://github.com/muhualing}{http://github.com/muhualing} & \href{tel: +86 18069867372}{Mobile: +86 18069867372} \\
 \end{tabular*}
 
 
@@ -85,11 +90,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
+      {Zhejiang University}{Hangzhou, China}
+      {Master of Computer Technology;  GPA: 3.85}{Sep. 2017 -- Apr. 2020}
+     
     \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+      {Hefei University of Technology}{Anhui, China}
+      {Bachelor of Applied Mathematics;  GPA: 3.53}{Sep. 2013 -- Jun. 2017}
   \resumeSubHeadingListEnd
 
 
@@ -97,77 +103,67 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+          
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
+      {Microsoft}{}
+      {Software Engineer Intern}{May. 2019 - Aug. 2019}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{Calendar Insight Bot}
+          {Designed and worked across the full stack to build a bot integrated with Microsoft Teams. This bot can help users check and manage their schedules in the chat windows.}
+          
       \resumeItemListEnd
-
+    
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 - Oct 2016}
+      {Chuang Lin Tech}{}
+      {Machine Learning Intern}{Jan. 2019 - Feb. 2019}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursesa, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+        \resumeItem{Social media algorithm}
+          {Developed and improved an PageRank algorithm which works for Weibo on big data to calculate the influence of Key Opinion Leader(KOL), lead to 10x speed boost.}
+        \resumeItem{Heterogeneous database migration}
+        {Use Apache Sqoop to transfer 1000GB of data in MySQL safely and efficiently (60-70MB/S) to distributed database HIVE.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeSubItem{Surgical robot image guidance system}
+        {Designed and developed databases and controllers using MongoDB and Python for surgical imaging guidance systems for surgical planning and surgical navigation.}
+    \resumeSubItem{Video real-time transmission system}
+        {A set of software and hardware combined video transmission system, based on H.264 encoding acquisition encoder data, video management system based on Spring and Hibernate, using Netty to manage socket.}
+    \resumeSubItem{Weshare SPA}
+        {Designed and worked across the backend of Weshare by using Flask and MySQL. Weshare is a prototype of a mobile app based on Flask and React, which is a single-page app for users to post and share idle items to people around.}
+    \resumeSubItem{Information Extraction for Open Domain}
+        {Using BiLSTM+CRF to do word-based Chinese sequence labeling model. Import DGCNN+Residual structure, improved the speed by 3x and F1-score by 7\% on Baidu SKE dataset.}
   \resumeSubHeadingListEnd
 
-%
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+
+%--------Technical SKILLS------------
+\section{Technical Skills}
  \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-     \hfill
-     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-   }
+    \resumeSubItem{Languages}
+      {Java, Python, SQL, Javascript, Shell, Web}
+    \resumeSubItem{Specialties}
+      {Back-end engineering, Front-end engineering, AWS, Natural Language Processing, Data Processing}
  \resumeSubHeadingListEnd
 
+%--------Awards and Honors------------
+\section{Awards and Honors}
+ \resumeSubHeadingListStart
+    \resumeSubItemTime
+    {2nd Prize of National Post-Graduate Mathematical Contest in Modeling}
+    {Oct. 2019}
+    \resumeSubItemTime
+    {1st Prize of "Bloom Cup" 5G Application Collection Competition(Led by MIIT)}
+    {July. 2019}
+    \resumeSubItemTime
+    {Outstanding Graduate Student at Zhejiang University}
+    {June. 2018, June. 2019}
+    \resumeSubItemTime
+    {CUMCM 2nd Prize of Anhui Province}
+    {June. 2016}
+ \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
